@@ -9,3 +9,4 @@ Môn học thiết kết web năm học 2021 - 2022
 ## Chuẩn đầu ra môn học
 
 ## Tài liệu Tham khảo
+- [Giáo trình tham khảo](https://drive.google.com/file/d/12giFpgEPD1lvVYnQ6byDI3jZYibwOETR/view?usp=sharing)
