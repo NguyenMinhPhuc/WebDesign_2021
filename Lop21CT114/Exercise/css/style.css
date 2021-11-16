@@ -1,0 +1,176 @@
+#bai01 table,
+th,
+td {
+  border: 1px solid black;
+}
+
+/* Css cho bài thực hành 02 */
+#bai02__01 table,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+#bai02__02 table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.center80 {
+  width: 80%;
+}
+.center20 {
+  width: 20%;
+}
+#bai02__03 table {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* Css Cho bài tập thực hành 03 */
+#bai03__01 {
+  width: 70%;
+  margin: auto;
+}
+#bai03__01 table {
+  width: 100%;
+  border: 1px solid green;
+  border-collapse: collapse;
+}
+#bai03__01 th,
+td {
+  border: 1px solid green;
+  border-collapse: collapse;
+  text-transform: uppercase;
+}
+
+#bai03__02 {
+  width: 70%;
+  margin: auto;
+}
+#bai03__02 table {
+  width: 100%;
+  border: 1px solid green;
+  border-collapse: collapse;
+}
+#bai03__02 th,
+td {
+  border: 1px solid green;
+  border-collapse: collapse;
+  text-transform: uppercase;
+}
+#bai03__02 th {
+  width: 20%;
+}
+
+#bai03__03 {
+  width: 100%;
+  margin: auto;
+}
+#bai03__03 table {
+  width: 100%;
+  border: 1px solid Red;
+  border-collapse: collapse;
+}
+#bai03__03 th,
+td {
+  border: 1px solid Red;
+  border-collapse: collapse;
+  text-transform: uppercase;
+}
+
+#bai03__04 {
+  width: 100%;
+  margin: auto;
+}
+#bai03__04 table {
+  width: 100%;
+  border: 1px solid Blue;
+  border-collapse: collapse;
+}
+#bai03__04 th {
+  border: 1px solid Blue;
+  border-collapse: collapse;
+  text-transform: uppercase;
+}
+
+#bai03__04 td {
+  border: 1px solid Blue;
+  border-collapse: collapse;
+  text-transform: lowercase;
+}
+#bai07__01 table {
+  width: 100%;
+  border: 1px solid Blue;
+  border-collapse: collapse;
+}
+#bai07__01 th {
+  border: 1px solid Blue;
+  border-collapse: collapse;
+  text-transform: uppercase;
+}
+
+#bai07__01 td {
+  border: 1px solid Blue;
+  border-collapse: collapse;
+  text-transform: lowercase;
+}
+#bai07__01 th:nth-child(even) {
+  background-color: #d6eeee;
+}
+#bai07__01 td:nth-child(even) {
+  background-color: #d6eeee;
+}
+
+#bai07__01 tr:nth-child(even) {
+  background-color: #d6eeee;
+}
+
+#bai07__01 td {
+  border: 1px solid Blue;
+  border-collapse: collapse;
+  text-transform: lowercase;
+}
+#bai07__01 th:nth-child(even) {
+  background-color: #d6eeee;
+}
+#bai07__01 td:nth-child(even) {
+  background-color: #d6eeee;
+}
+
+#bai07__01 tr:nth-child(even) {
+  background-color: #d6eeee;
+}
+/* bai 7.2 */
+
+#bai07__02 table,
+th,
+td {
+  border: 0px;
+  border-bottom: 1px solid Blue;
+  border-collapse: collapse;
+}
+#bai07__02 table {
+  width: 100%;
+}
+#bai07__02 th {
+  border-bottom: 1px solid rgb(26, 107, 228);
+  border-collapse: collapse;
+  text-transform: uppercase;
+  text-align: left;
+  background-color: rgb(26, 107, 228);
+  color: white;
+}
+
+#bai07__02 td {
+  border-bottom: 1px solid rgb(171, 171, 173);
+  border-collapse: collapse;
+  text-transform: lowercase;
+  padding: 6px;
+  text-align: left;
+}
+.point {
+  width: 15%;
+}
+#bai07__02 tr:hover:not(tr:first-child) {
+  background-color: rgb(240, 240, 241);
+}

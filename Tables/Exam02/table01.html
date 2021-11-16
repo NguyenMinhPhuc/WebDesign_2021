@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/table02.css" />
+    <title>Table</title>
+  </head>
+  <body>
+    <table class="table">
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <hr />
+    <table class="table table-color">
+      <tr>
+        <th colspan="2" style="width: 60%">Name</th>
+        <!-- <th>2</th> -->
+        <th>Age</th>
+      </tr>
+      <tr>
+        <th style="width: 40%">Nguyen Minh</th>
+        <td>Phuc</td>
+        <td>36</td>
+      </tr>
+      <tr>
+        <th>Nguyen Hoang</th>
+        <td>Minh</td>
+        <td>39</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <table
+      border="2"
+      style="
+        border: 1px solid rgb(31, 28, 28);
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+      "
+    >
+      <tr>
+        <td colspan="2">1, 2</td>
+        <!-- <td>2</td> -->
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td rowspan="2">6, 9</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <!-- <td>9</td> -->
+      </tr>
+
+      <tr>
+        <td colspan="2" rowspan="2">10</td>
+        <!-- <td>11</td> -->
+        <td>12</td>
+      </tr>
+
+      <tr>
+        <!-- <td>13</td>
+        <td>14</td> -->
+        <td>15</td>
+      </tr>
+
+      <tr>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+      </tr>
+      <caption style="caption-side: bottom">
+        tieu de duoi
+      </caption>
+    </table>
+
+    <hr />
+    <h3>padding and Spacing</h3>
+    <table
+      border="2"
+      style="
+        border: 1px solid rgb(31, 28, 28);
+        width: 100%;
+        text-align: center;
+        /* border-collapse: collapse; */
+        padding: 10px;
+        border-spacing: 20px;
+      "
+    >
+      <tr>
+        <td>1</td>
+        <td rowspan="2">2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <!-- <td>5</td> -->
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+    </table>
+
+    <hr />
+    <table style="width: 100%; border-collapse: collapse">
+      <colgroup>
+        <col span="1" />
+        <col span="1" style="visibility: collapse" />
+        <col span="1" style="background-color: blue" />
+      </colgroup>
+      <tr class="table-hover">
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+    </table>
+  </body>
+</html>
