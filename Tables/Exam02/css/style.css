@@ -1,0 +1,27 @@
+#table01 {
+  background-color: cyan;
+}
+#table01 table,
+th,
+td {
+  border: 2px solid Red;
+  border-collapse: collapse;
+}
+.table {
+  width: 100%;
+}
+.width__40 {
+  width: 40%;
+  background-color: lightcoral;
+}
+tr {
+  height: 50px;
+}
+#table02 {
+  background-color: blue;
+}
+#table02 table,
+td {
+  border: 2px solid White;
+  border-collapse: collapse;
+}

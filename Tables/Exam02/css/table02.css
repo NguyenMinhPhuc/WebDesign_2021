@@ -1,0 +1,32 @@
+.table {
+  border: 2px solid black;
+  width: 60%;
+  border-collapse: collapse;
+}
+.table td,
+th {
+  height: 30px;
+  border: 2px solid black;
+}
+th {
+  text-align: center;
+}
+.table-color {
+  background-color: cyan;
+}
+
+td {
+  padding: 10px;
+}
+/* tr:nth-child(even) {
+  background-color: lightblue;
+}
+td:nth-child(even) {
+  background-color: lightblue;
+} */
+tr {
+  border-bottom: 1px dashed rgb(117, 115, 115);
+}
+tr:hover {
+  background-color: aqua;
+}

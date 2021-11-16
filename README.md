@@ -8,7 +8,7 @@
 ### a.   Description: 
 
 This course guides students how to build a website interface using HTML and CSS, and introduces modern design tools to sketch ideas, support and build a website interface. Moreover, the course teaches students how to self-study issues related to web design that contribute to the formation of lifelong learning skills for students.
-### b.   prerequisites or corequisites: Undefined
+### b.   prerequisites or prerequisites: Undefined
 ### c.   Required/Elective: Required 
 ## 6.   Specific goals for the course
 
