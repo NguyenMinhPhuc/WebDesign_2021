@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Exercise 02</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Travel reservation form</h1>
+        </div>
+
+        <div class="main">
+            <h4>* denotes mandotory</h4>
+            <form action="" method="get">
+                <div class="form-group">
+                    <label for="fullName">Full Name*:</label>
+                    <input type="text" name="fullName" id="fullName" placeholder="FirstName lastName"
+                        class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email*:</label>
+                    <input type="email" name="email" id="email" placeholder="email address" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="tour">Select Tour Package*:</label>
+                    <input list="tourList" name="tour" id="tour" class="form-control">
+                    <datalist id="tourList">
+                        <option value="Nha trang" selected>Nha trang</option>
+                        <option value="Da lat">Da lat</option>
+                        <option value="Vung tau">Vung tau</option>
+                        <option value="Phan thiet">Phan thiet</option>
+                    </datalist>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="arrivalData">Arrival Date*:</label>
+                    <input type="date" name="arrivalData" id="arrivalData" placeholder="m/d/y" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="numberofperson">Number of person*:</label>
+                    <input type="number" name="numberofperson" id="numberofperson" placeholder="Unknown type"
+                        class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <p>What would you want to avail*:</p>
+                    <label for="boarding" class="nowrap">boarding</label>
+                    <input type="checkbox" name="boarding" id="boarding"> <br>
+                    <label for="fooding" class="nowrap">fooding</label>
+                    <input type="checkbox" name="fooding" id="fooding"><br>
+                    <label for="seeing" class="nowrap">Sight seeing</label>
+                    <input type="checkbox" name="seeing" id="seeing">
+                </div>
+                <!-- TextBox Nhập mã giảm giá -->
+                <div class="form-group">
+                    <label for="coupom">Discout coupom code:</label>
+                    <input type="text" name="coupom" id="coupom" class="form-control">
+                </div>
+                <!-- Terms and conditions -->
+                <div class="form-group">
+                    <label>Terms and conditions</label>
+                    <input type="radio" name="terms" id="agree" checked>
+                    <label for="agree" class="nowrap">I agree</label>
+
+                    <input type="radio" name="terms" id="disagree">
+                    <label for="disagree" class="nowrap">I disagree</label>
+                </div>
+                <!-- button -->
+                <div class="form-group form-center">
+                    <input type="submit" id="submit" value="Complete reservation" class="btn btn-primary">
+
+                    <input type="reset" id="reset" value="Cancel" class="btn btn-danger">
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

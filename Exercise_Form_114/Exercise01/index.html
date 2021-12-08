@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Exercise01--Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/Ex01.png" alt="logo header">
+            <div class="about">
+                <h1>About</h1>
+                <p>To make your document look professionally produced, Word provides header, footer, cover page, and
+                    text
+                    box designs that complement each other. For example, you can add a matching cover page, header, and
+                    sidebar. Click Insert and then choose the elements you want from the different galleries</p>
+            </div>
+        </div>
+        <!-- Thanh điều hướng (menu) -->
+        <div class="navigation">
+            <h2>Our Location</h2>
+            <ul class="menu">
+                <li>USA
+                    <!-- ul>li*4>a : Cách gõ của Emmet-->
+                    <ul class="submenu">
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">Columbus</a></li>
+                        <li><a href="#">Austin</a></li>
+                        <li><a href="#">Philly</a></li>
+                    </ul>
+                </li>
+                <li>World
+                    <!-- ul>li*2>a -->
+                    <ul class="submenu">
+                        <li><a href="#">Ottawa</a></li>
+                        <li><a href="#">Sydney</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- End Navigation -->
+        <!-- Begin Main -->
+        <div class="main">
+            <!-- Row 1: UpComing Classes -->
+            <div class="row">
+                <h2>Upcoming Class</h2>
+                <!-- table>tr*3>td*2 -->
+                <table border="1">
+                    <tr>
+                        <th>Location</th>
+                        <th>Topic</th>
+                    </tr>
+                    <tr>
+                        <td>New York</td>
+                        <td>JavaScript & jQuery</td>
+                    </tr>
+                    <tr>
+                        <td>San francisco</td>
+                        <td>HTML & CSS</td>
+
+                    </tr>
+                </table>
+            </div>
+            <!-- Row 2 : Sign Up-->
+            <div class="row">
+                <fieldset>
+                    <legend style="text-align: center;">
+                        <h2>Sign Up!</h2>
+                    </legend>
+
+
+                    <form action="#" method="get" autocomplete="on" validate>
+                        <div class="form-group">
+                            <label for="name">Name: </label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Enter name ...">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="number">Phone: </label>
+                            <input type="number" pattern="[0-9]{10}" name="tel" id="tel" class="form-control"
+                                placeholder="[0-9]{10}">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location">Location:</label>
+                            <select name="location" id="location" class="form-control">
+                                <option value="New York">New York</option>
+                                <option value="Columbus">Columbus</option>
+                                <option value="Austin">Austin</option>
+                                <option value="Philly">Philly</option>
+                                <option value="Ottawa">Ottawa</option>
+                                <option value="Sydney">Sydney</option>
+                                <option value="Sydney" selected>San francisco</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" id="gendergroup">
+                            <fieldset class="form-control">
+                                <legend>Gender</legend>
+                                <label for="female">Female</label>
+                                <input type="radio" name="gender" id="female" checked>
+                                <label for="male">Male</label>
+                                <input type="radio" name="gender" id="male">
+                            </fieldset>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="experience">Experience</label>
+                            <textarea name="experience" id="experience" rows="20" class="form-control"
+                                placeholder="Enter content..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" value="Sign Up" class="btn btn-primary">
+
+                            <input type="reset" value="Cancel" class="btn btn-danger">
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+
+        </div>
+        <!-- End Main -->
+
+        <div class="footer">
+            <a href="#">Twitter</a>|<a href="#">Facebook</a>|<a href="#">Flickr</a>
+        </div>
+    </div>
+</body>
+
+</html>

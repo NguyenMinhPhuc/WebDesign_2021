@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Exercise 03-- form</title>
+</head>
+<!-- modal -->
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="logo">
+        </div>
+        <form action="#" method="get">
+            <!-- Username -->
+            <div class="form-group">
+                <!-- <label class="lbl lbl--wrap" for="username">Username</label> -->
+                <input class="form-control" type="text" name="username" id="username" placeholder="Enter Username...">
+            </div>
+            <!-- Password -->
+            <div class="form-group">
+                <!-- <label class="lbl lbl--wrap" for="password">Password</label> -->
+                <input class="form-control" type="password" name="password" id="password"
+                    placeholder="Enter Password...">
+            </div>
+            <!-- Button login -->
+            <div class="form-group">
+                <input class="btn btn--login" type="submit" value="Login">
+            </div>
+            <!-- Check : Remember me -->
+            <div class="form-group">
+                <input type="checkbox" name="remember" id="remember">
+                <label class="lbl" for="remember">Remember me</label>
+            </div>
+            <div class="frmfooter">
+                <div class="frmfooter__left">
+                    <input class="btn btn-Cancel" type="reset" value="Cancel">
+                </div>
+                <div class="frmfooter__right">
+                    Forgot <a href="#"> password?</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

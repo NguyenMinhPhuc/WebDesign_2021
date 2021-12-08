@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Exercise 01 - Form</title>
+</head>
+
+<body>
+    <div id="header">
+        <img src="images/2021-12-03_074338.png" alt="Girl Develop IT">
+        <h1>About</h1>
+        <p>Save time in Word with new buttons that show up where you need them. To change the way a picture fits in
+            <span class="nhanmanh">your document</span> , click it and a button for layout options appears next to it.
+            When you work
+            on a table, click where you want to add a row or a column,<span class="nhanmanh">90%</span> and then click
+            the plus sign.
+        </p>
+    </div>
+    <div id="navigation">
+        <h3>Our Location</h3>
+        <!-- ul>li*2 -->
+        <ul>
+            <li>
+                USA
+                <!-- ul>li*4>a -->
+                <ul>
+                    <li><a href="#">New York</a></li>
+                    <li><a href="#">Columbus</a></li>
+                    <li><a href="#">Austin</a></li>
+                    <li><a href="#">Philly</a></li>
+                </ul>
+            </li>
+            <li>World
+                <!-- ul>li*2>a -->
+                <ul>
+                    <li><a href="#">Ottawa</a></li>
+                    <li><a href="#">Sydney</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="main">
+        <section id="upcoming">
+            <h3>Upcoming Classes</h3>
+            <!-- table>tr*3>td*2 -->
+            <table border="1">
+                <tr>
+                    <th>Location</th>
+                    <th>Topic</th>
+                </tr>
+                <tr>
+                    <td>New York</td>
+                    <td>javaScript & iQuery</td>
+                </tr>
+                <tr>
+                    <td>San Francisco</td>
+                    <td> Html & CSS</td>
+                </tr>
+            </table>
+        </section>
+
+        <div id="formsignup">
+            <h3>Sign Up!</h3>
+            <form action="#" method="get">
+                <!-- textbox name -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name"> <br>
+                </div>
+
+                <!-- textbox email -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <!-- Drop down list -->
+                <div class="form-group">
+                    <label for="country">Location:</label>
+                    <select name="country" id="country">
+                        <option value="San Francisco">San Francisco</option>
+                        <option value="New York">New York</option>
+                        <option value="Columbus">Columbus</option>
+                    </select>
+                </div>
+
+                <!-- Drop down list: Datalist -->
+                <div class="form-group">
+                    <label for="country">Location2:</label>
+                    <input list="countrylist" name="country" id="country">
+                    <datalist id="countrylist">
+                        <option value="San Francisco">San Francisco</option>
+                        <option value="New York">New York</option>
+                        <option value="Columbus">Columbus</option>
+                    </datalist>
+                </div>
+
+                <div class="form-check">
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="female" checked>
+                        <label for="male">Female</label>
+                        <input type="radio" name="gender" id="male">
+                    </fieldset>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Experience:</label>
+                    <br>
+                    <textarea name="experience" id="experience" cols="30" rows="2"></textarea>
+                </div>
+
+                <!-- button submit -->
+                <div class="btn-group">
+                    <input type="submit" value="Sign up">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="footer">
+        <a href="#">Twitter</a>|<a href="#">Facebook</a>|<a href="#">Flickr</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.imgbox {
+  float: left;
+  text-align: center;
+  width: 220px;
+  border: 1px solid gray;
+  margin: 4px;
+  padding: 6px;
+}
+img {
+  width: 100%;
+}
+button {
+  width: 100%;
+}
+li {
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+}
+li:hover {
+  background-color: blueviolet;
+}

@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  width: 32.99%;
+  max-height: 300px;
+  min-height: 300px;
+  margin-right: 0.5%;
+  padding: 20px;
+  border: 1px solid blue; */
+  float: left;
+  text-align: justify;
+}
+div.last-div {
+  margin-right: 0;
+  padding-right: 20px;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Example -- Form</title>
+</head>
+
+<body>
+    <div id="form01">
+        <form action="" autocomplete="off">
+
+            <input type="search" name="searching" class="clsSearching" placeholder="Searching">
+            <hr>
+            <label for="firstname">First name:</label> <br>
+            <input type="text" class="clsSearching" id="firstname" name="firstname">
+            <br>
+            <label for="lastname">Password:</label>
+            <br>
+            <input type="password" id="lastname" name="lastname">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <hr>
+    <h2> 5 Input Elements</h2>
+    <div id="form02">
+        <form action="#">
+            <label for="fullname">Full name:</label>
+            <br>
+            <input type="text" id="fullname" name="fullname">
+            <!-- Radio chọn 1 trong nhiều lựa chọn -->
+            <br>
+            <input type="radio" id="male" name="sex" checked>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="sex">
+            <label for="other">Other</label>
+
+            <!-- CheckBox cho phép chọn nhiều lựa chọn hoặc không chọn -->
+            <h3>Sở thích</h3>
+            <input type="checkbox" id="nghenhac" name="nghenhac">
+            <label for="nghenhac">Nghe nhạc</label>
+            <input type="checkbox" id="xemphim" name="xemphim" value="stXemPhim">
+            <label for="xemphim">Xem phim</label>
+            <input type="checkbox" id="thethao" name="thethao">
+            <label for="thethao">Thể thao</label>
+            <br>
+            <!-- button : dùng theo input -->
+            <input type="submit" value="Gửi server">
+            <input type="reset" value="Hủy">
+            <!-- button : Sử dụng tag button -->
+            <button onclick="alert('Hello World')">Send data</button>
+        </form>
+    </div>
+    <hr>
+    <h1> Attribute -- Thuộc tính của tag Form</h1>
+    <h4>Action Attribute</h4>
+    <p>Chỉ định nơi nhận giá trị (file server side)</p>
+    <h4>Method Attribute</h4>
+    <p>Chỉ định cái phương gửi data (get, post)</p>
+    <p>Notes on Get</p>
+    <ol>
+        <li>data sẽ được thêm lên url theo cặp : Name/value</li>
+        <li>không dung get khi gửi data bảo mật</li>
+        <li>chiều dài của URL cố định 2048</li>
+        <li>bookmark data</li>
+        <li>get dùng cho data không cần bảo mật</li>
+    </ol>
+
+    <p>Notes on Post</p>
+    <ol>
+        <li>them data vào body của request</li>
+        <li>không giới dung lượng</li>
+        <li>không bookmark data</li>
+    </ol>
+    <div id="Form03">
+        <form action="#" target="_self" autocomplete="on" novalidate>
+            <input type="email">
+            <input type="submit">
+        </form>
+    </div>
+
+    <hr>
+    <h2>Dropdown List</h2>
+    <div id="Form04">
+        <form action="">
+            <select name="uniList" id="uniList" size="5" multiple>
+                <option value="LHU">Lac Hong University</option>
+                <option value="LHU">Su pham ky thuat University</option>
+                <option value="LHU">Cong nghe thong tin University</option>
+                <option value="LHU">KHTN University</option>
+                <option value="LHU" selected>Back khoa University</option>
+            </select>
+            <br>
+            <hr>
+            <h3>Datalist:</h3>
+
+            <input list="unilist" name="unilist">
+            <datalist id="unilist">
+                <option value="LHU">Lac Hong University</option>
+                <option value="SPKT">Su pham ky thuat University</option>
+                <option value="CNTT">Cong nghe thong tin University</option>
+                <option value="KHTN">KHTN Universisty</option>
+                <option value="BK" selected>Back khoa University</option>
+            </datalist>
+            <h3>Input type</h3>
+            <label for="password">password: </label>
+            <input type="password" name="password" id="password" required autofocus>
+
+            <input type="color" name="color" id="color">
+
+            <input type="number" name="" id="">
+
+            <input type="date" name="" id="">
+            <input type="datetime-local" name="" id="">
+
+            <input type="tel" name="" id="" pattern="[0-9]{10}">
+
+            <input type="range" name="" id="" min="1" max="100" step="10">
+
+            <input type="hidden" name="ID">
+            <hr>
+            <label for="content">Content:</label>
+            <br>
+            <!-- Textarea -->
+            <textarea name="content" id="content" style="width:500px;height:300px;"
+                placeholder="Enter content..."></textarea>
+            <!-- fieldset: Nhóm constrol  -->
+            <fieldset style="width:400px;">
+                <legend>Sex</legend>
+                <input type="radio" id="male" name="sex" value="true">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="sex" checked value="false">
+                <label for="female">Female</label>
+            </fieldset>
+            <input type="submit" value="Chọn">
+        </form>
+    </div>
+    <div id="Form05">
+        <form action="">
+            <input type="submit" value="Login" class="btn btn--primary">
+            <input type="reset" value="Cancel" class="btn btn--danger">
+
+        </form>
+    </div>
+</body>
+
+</html>

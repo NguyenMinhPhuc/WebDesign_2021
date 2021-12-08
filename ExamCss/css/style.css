@@ -1,0 +1,72 @@
+/* Comment */
+/* comment */
+p {
+  color: rgb(95, 95, 99);
+  font-size: 2em;
+  text-transform: uppercase;
+}
+#title01 {
+  color: rgb(49, 119, 119);
+  font-size: 2rem;
+}
+.p1 {
+  color: green;
+}
+.p2 {
+  color: red;
+}
+#navigation p {
+  color: brown;
+  background-color: aquamarine;
+}
+li.active {
+  color: red;
+}
+a:hover {
+}
+li:hover {
+}
+a:link {
+}
+
+.backgroud__color {
+  background-color: lightgray;
+  height: 300px;
+  color: white;
+  background-image: url("https://cdn.streamz.art/media/images/pool_ocean_palms.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.border__css {
+  width: 200px;
+  border: 0px solid red;
+}
+#image img {
+  width: 200px;
+  height: 200px;
+  border: 0px dotted red;
+  border-radius: 50%;
+}
+* {
+  margin: 0;
+}
+.margin__css {
+  border: 5px solid red;
+  /* margin: 20px 20px 20px 20px; */
+  /* top: 20px; left, right: 30px; bottom: 40px */
+  /* margin: 20px 30px 40px; */
+  /* top,bottom: 20px; left, right: 30px; */
+  /* margin: 20px 30px; */
+  /* top,right, bottom, left=40px; */
+  margin: 40px;
+  /* margin-top:20px;
+  margin-right:20px;
+  margin-bottom:20px;
+  margin-left:20px; */
+  padding: 30px;
+}
+#menu li {
+  padding: 20px;
+  display: inline-block;
+}

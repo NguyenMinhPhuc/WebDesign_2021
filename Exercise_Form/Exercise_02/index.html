@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Exercise 02 - Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Travel reservation form</h1>
+        <h4>* denotes mandotory</h4>
+        <form action="#" method="get" autocomplete="off">
+            <!-- FullName -->
+            <div class="form-group">
+                <label for="fullname" class="lbl--wrap">Full name *:</label>
+                <input type="text" name="fullname" id="fullname" placeholder="firstName lastName..." autofocus
+                    class="form-control">
+            </div>
+            <!-- Email -->
+            <div class="form-group">
+                <label for="emal" class="lbl--wrap">Email Address *:</label>
+                <input type="email" name="email" id="email" placeholder="Email address..." autofocus
+                    class="form-control">
+            </div>
+
+            <!-- drop down list -->
+            <div class="form-group">
+                <label for="tour" class="lbl--wrap">Select Tour package *:</label>
+                <select name="tour" id="tour" class="form-control">
+                    <option value="Phan Thiết">Phan Thiết</option>
+                    <option value="Đà Lạt">Đà Lạt</option>
+                    <option value="Nha Trang">Nha Trang</option>
+                    <option value="Đà Nẵng">Đà Nẵng</option>
+                </select>
+            </div>
+
+            <!-- Arrival date : UI/UX desinger https://dev.it-->
+            <div class="form-group">
+                <label class="lbl--wrap" for="arrivaldate">Arrival date *:</label>
+                <input type="date" name="arrivaldate" id="arrivaldate" class="form-control">
+            </div>
+
+            <!-- Number -->
+            <div class="form-group">
+                <label class="lbl--wrap" for="numberperson">Number of persons *:</label>
+                <input type="number" name="numberperson" id="numberperson" placeholder="Unknown_type"
+                    class="form-control">
+            </div>
+
+            <div class="form-check">
+                <label class="lbl--wrap">What would you want to avail? *</label>
+                <label for="boarding">Boarding</label>
+                <input type="checkbox" name="boarding" id="boarding" value="boarding"> <br>
+                <label for="fooding">Fooding</label>
+                <input type="checkbox" name="fooding" id="fooding" value="fooding"><br>
+                <label for="sightseeing">sightseeing</label>
+                <input type="checkbox" name="sightseeing" id="sightseeing" value="sightseeing">
+            </div>
+            <div class="form-group">
+                <label class="lbl--wrap" for="discout">Discout coupon code :</label>
+                <input type="text" name="discout" id="discout" placeholder="Unknown_type" class="form-control">
+            </div>
+
+            <!-- radio term -->
+            <div class="form-check">
+                <label class="lbl--wrap">Terms and conditions *</label>
+
+                <input type="radio" name="term" id="agree" value="agree" checked>
+                <label for="agree"> I agree</label>
+
+                <input type="radio" name="term" id="disagree" value="disagree">
+                <label for="disagree">I disagree</label>
+            </div>
+            <div class="form-group">
+                <!-- button submit: dùng để gửi data của form lên file server side -->
+                <input type="submit" value="Complete reservation" class="btn btn--primary">
+                <!-- button reset: Dùng để xóa data trong các input về trạng thái ban đầu -->
+                <input type="reset" value="Cancel reservation" class="btn btn--danger">
+
+                <input type="button" onclick="alert('click me')" value="button" class="btn btn--primary">
+
+                <button class="btn btn--danger">tag button</button>
+
+                <div class="btn btn--danger" id="testbutton" onclick="alert('click me')">
+                    test button
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
